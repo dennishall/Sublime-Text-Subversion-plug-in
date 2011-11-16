@@ -1,0 +1,6 @@
+[
+  {"keys":["super+alt+s"], "command":"subversion_status"},
+  {"keys":["super+alt+a"], "command":"subversion_add"},
+  {"keys":["super+alt+c"], "command":"subversion_commit"},
+  {"keys":["super+alt+u"], "command":"subversion_update"}
+]
