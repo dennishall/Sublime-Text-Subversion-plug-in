@@ -1,7 +1,7 @@
 Sublime Text Subversion plug-in
 ===============================
 
-A very basic Subversion client for the [Sublime Text](http://www.sublimetext.com/) text editor.
+A very basic Subversion plugin for the [Sublime Text](http://www.sublimetext.com/) text editor, based on [burriko's plugin](https://github.com/burriko/sublime-subversion)
 
 The aim is to provide a quick method to commit simple changes without leaving Sublime.  To this end the only subversion commands that are supported are:
 
