@@ -1,4 +1,4 @@
-Sublime Text 2 Subversion plug-in
+Sublime Text 2 Subversion Plug-in
 =================================
 
 A very basic subversion plugin for the [Sublime Text 2](http://www.sublimetext.com/2) text editor, based on [burriko's plugin](https://github.com/burriko/sublime-subversion).
