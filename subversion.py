@@ -53,7 +53,7 @@ class SubversionCommand():
       #self.log(" view name: " + str(self.window.active_view().id()))
       self.log("--- SVN ---")
       self.log(self.args)
-      self.log(getOutputOfSysCommand(self.args, cwd=dir))
+      self.log(self.getOutputOfSysCommand(self.args, cwd=dir))
 
     try:
       if not dir:
@@ -62,7 +62,7 @@ class SubversionCommand():
       self.args = "svn " + svn_command
 
       if svn_command == "commit":
-        svn_diff = getOutputOfSysCommand("svn diff "+filename, cwd=dir)
+        svn_diff = self.getOutputOfSysCommand("svn diff "+filename, cwd=dir)
         if(svn_diff == ""):
           self.log("No changes to commit")
         else:
