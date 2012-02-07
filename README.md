@@ -5,20 +5,30 @@ A very basic subversion plugin for the [Sublime Text 2](http://www.sublimetext.c
 
 The aim is to provide a quick method to commit simple changes without leaving Sublime Text 2.  To this end the only subversion commands that are supported are:
 
-* 'status', to check what will be commited
+* 'status', to check what files have been modified
 * 'update', to get the latest version of a file
 * 'add', to add new files to the commit
-* 'commit', to commit changes
+* 'commit', to commit changes with a brief message
 
-Committing will show you a diff of your changes, and allow you to enter a single line of text for the commit message.
+Committing will show you a colorized diff of your changes, and allow you to enter a single line of text for the commit message.
+
+NOTE:
+The commands 'status' and 'update' run at the FOLDER level of the current file, but 'add' and 'commit' only operate upon the current file.
 
 
 Usage
 -----
+ 
+ * In Sublime Text 2, select Preferences > Browse Packages. A finder/explorer instance will open to "Packages". Open the "User" subfolder.
+ * Copy `subversion.py` and `Default.sublime-keymap` into the `Sublime Text 2/Packages/User` folder that you opened in the previous step.
+ * You may need to restart ST2 so that it will compile the .py file to a .pyc file.
+ * All commands are accessed via keyboard shortcuts, which you can view/change by opening `Default.sublime-keymap`.
 
- * Copy both files into your 'Sublime Text 2/Packages/User' folder which you should be able to find in your profile folder.
- * Make sure that you have the subversion command line client installed and that it's in your path.
- * All commands are accessed via keyboard shortcuts, which you can view/change by opening Default.sublime-keymap.
+
+Prerequisites
+-------------
+
+ * A subversion *command line client* (not tortoise) installed and in your `path` (i.e., you can type `svn -h` in a command window and it lists the svn commands).
 
 
 Known Issues
